@@ -171,3 +171,8 @@ if MA_66 <= tt:
 
 ## Resource
 - [yfinance](https://github.com/ranaroussi/yfinance)
+
+
+***
+### 專案開發期間
+2019/12 ~ 2020/1
