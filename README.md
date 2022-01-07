@@ -17,6 +17,8 @@ python run.py
 ```
 
 ## Description
+### Duration
+&nbsp; 2011/1~
 ### Strategy
 1. 利用回歸模型，計算出各檔股票的統計數據（資料來源為股價日報酬）  
 ```py
