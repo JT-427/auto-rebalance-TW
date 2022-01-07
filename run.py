@@ -125,9 +125,9 @@ for i in range(100000):
             print('停損')
             break # 停損再平衡
         
-        MA_20 = Stock_data['^TWII'].loc[:Assets.index[g]].rolling(66).mean()[-1]
+        MA_66 = Stock_data['^TWII'].loc[:Assets.index[g]].rolling(66).mean()[-1]
         tt = Stock_data['^TWII'].loc[:Assets.index[g]][-1]
-        if MA_20 > tt:
+        if MA_66 > tt:
             sit_1 = sit_1+1
             if sit_1 !=0:
                 sit_2 = 0
@@ -136,7 +136,7 @@ for i in range(100000):
                 print('牛市-->熊市')
                 break # 牛市-->熊市 且虧損：再平衡
         
-        if MA_20 <= tt:
+        if MA_66 <= tt:
             sit_2 = sit_2+1
             if sit_2 != 0:
                 sit_1 = 0
